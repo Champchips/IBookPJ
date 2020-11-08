@@ -12,6 +12,7 @@ import { Ionicons, AntDesign, MaterialCommunityIcons} from "@expo/vector-icons";
 import BookDetailScreen from "../screens/BookDetailScreen";
 import PaymentScreen from "../screens/PaymentScreen";
 import ProfileScreen from "../screens/ProfileScreen";
+import ReadBookScreen from "../screens/ReadBookScreen";
 const BookTabNavigator = createBottomTabNavigator(
   {
       Home:{
@@ -79,6 +80,12 @@ const CombineNavigator = createStackNavigator(
     },
     BookDetail: {
       screen:BookDetailScreen,
+      navigationOptions: {
+        headerShown: false,
+      },
+    },
+    ReadBook:{
+      screen:ReadBookScreen,
       navigationOptions: {
         headerShown: false,
       },

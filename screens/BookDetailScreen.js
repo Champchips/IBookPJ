@@ -56,7 +56,7 @@ const BookDetailScreen = (props) => {
         <TouchableOpacity
           style={styles.buttonContainer}
           onPress={() => {
-            props.navigation.navigate("Payment");
+            props.navigation.navigate("ReadBook");
           }}
         >
           <Text style={styles.buttonText}>Select</Text>
